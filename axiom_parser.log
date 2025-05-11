@@ -1,0 +1,273 @@
+2025-05-12 01:22:16,449 - INFO - config - Логирование настроено.
+2025-05-12 01:22:16,450 - INFO - config - ==================== ЗАПУСК AXIOM VOLUME BOT ====================
+2025-05-12 01:22:33,835 - INFO - config - MAIN: Режим работы ATH ботов установлен: BOTH
+2025-05-12 01:22:33,848 - INFO - database - Таблица 'coins' успешно проверена/создана в БД 'axiom_data.db'.
+2025-05-12 01:22:37,065 - INFO - database - Все данные из таблицы 'coins' были удалены.
+2025-05-12 01:22:37,066 - INFO - config - MAIN: База данных очищена.
+2025-05-12 01:22:37,080 - INFO - browser_parser - Запуск нового экземпляра браузера...
+2025-05-12 01:22:40,947 - INFO - browser_parser - Запуск Chrome с профилем: C:/AxiomParserProfile
+2025-05-12 01:22:41,841 - INFO - browser_parser - Браузер успешно запущен (с попыткой маскировки).
+2025-05-12 01:22:41,842 - INFO - browser_parser - Переход на URL: https://axiom.trade/discover
+2025-05-12 01:22:44,401 - INFO - browser_parser - Успешно перешли на страницу Axiom.
+2025-05-12 01:23:35,736 - INFO - browser_parser - Проверка входа в аккаунт (поиск 'PRESET 1')...
+2025-05-12 01:23:35,785 - INFO - browser_parser - Индикатор 'PRESET 1' найден. Вход подтвержден.
+2025-05-12 01:23:35,785 - INFO - config - MAIN: Вход в Axiom подтвержден.
+2025-05-12 01:23:35,786 - INFO - telegram_handler - TG_HANDLER: Подключение Telegram клиентов...
+2025-05-12 01:23:35,786 - INFO - telegram_handler - TG_HANDLER: Инициализация Telethon клиента...
+2025-05-12 01:23:35,817 - INFO - telegram_handler - TG_HANDLER: Попытка подключения Telethon как axiom_user_session_acc2...
+2025-05-12 01:23:36,408 - INFO - telegram_handler - TG_HANDLER: Telethon уже авторизован.
+2025-05-12 01:23:36,408 - INFO - telegram_handler - TELETHON_HANDLER: Основной обработчик NewMessage зарегистрирован.
+2025-05-12 01:23:36,411 - INFO - telegram_handler - TELETHON_HANDLER: Обработчик MessageEdited зарегистрирован.
+2025-05-12 01:23:36,412 - INFO - telegram_handler - TG_HANDLER: Инициализация python-telegram-bot...
+2025-05-12 01:23:36,797 - INFO - telegram_handler - PTB_HANDLER: Тестовый обработчик _log_all_ptb_messages зарегистрирован.
+2025-05-12 01:23:36,798 - INFO - telegram_handler - PTB_HANDLER: Регистрация команд управления для ADMIN ID: 5554544104
+2025-05-12 01:23:36,799 - INFO - telegram_handler - PTB_HANDLER: Обработчик для /stop (и 'Стоп парсер') зарегистрирован.
+2025-05-12 01:23:36,799 - INFO - telegram_handler - PTB_HANDLER: Обработчик для /pause (и 'Пауза') зарегистрирован.
+2025-05-12 01:23:36,800 - INFO - telegram_handler - PTB_HANDLER: Обработчик для /play (и 'Play', 'Старт', 'Продолжить') зарегистрирован.
+2025-05-12 01:23:36,800 - INFO - telegram_handler - TG_HANDLER: python-telegram-bot Application создан, обработчики зарегистрированы. Polling запустит initialize/start, если требуется.
+2025-05-12 01:23:36,800 - INFO - telegram_handler - TG_HANDLER: python-telegram-bot инициализирован и запущен.
+2025-05-12 01:23:36,800 - INFO - telegram_handler - TG_HANDLER: Telethon клиент и PTB Application успешно инициализированы (но PTB polling еще не запущен из main.py).
+2025-05-12 01:23:36,800 - INFO - telegram_handler - TG_HANDLER: Кэширование entity для: @DevsNightmareProbot
+2025-05-12 01:23:36,901 - INFO - telegram_handler - TG_HANDLER: Кэширование entity для: @RickBurpBot
+2025-05-12 01:23:37,007 - INFO - telegram_handler - TG_HANDLER: Кэширование entity для: @paris_trojanbot
+2025-05-12 01:23:37,106 - INFO - telegram_handler - TG_HANDLER: Кэширование entity для: @WizLoki_bot
+2025-05-12 01:23:37,209 - INFO - config - MAIN: Запуск PTB Application polling в фоновом режиме...
+2025-05-12 01:23:37,224 - INFO - config - MAIN: PTB: Вызов app.initialize() перед запуском updater polling...
+2025-05-12 01:23:37,536 - INFO - config - MAIN: PTB: Вызов app.start() (запуск Dispatcher, JobQueue и т.д.)...
+2025-05-12 01:23:37,537 - INFO - telegram.ext.Application - Application started
+2025-05-12 01:23:37,540 - INFO - config - MAIN: PTB: Вызов app.updater.start_polling() (Updater: Updater[bot=ExtBot[token=7261927328:AAFau4E-sSCKpHWyAvhb-c_lextOapn8mWo]])...
+2025-05-12 01:23:37,600 - INFO - apscheduler.scheduler - Adding job tentatively -- it will be properly scheduled when the scheduler starts
+2025-05-12 01:23:37,603 - INFO - apscheduler.scheduler - Added job "run_parsing_cycle" to job store "default"
+2025-05-12 01:23:37,604 - INFO - apscheduler.scheduler - Scheduler started
+2025-05-12 01:23:37,604 - INFO - config - MAIN: Планировщик запущен. Парсинг будет выполняться каждую минуту в ~1 секунд.
+2025-05-12 01:23:37,605 - INFO - config - MAIN: Приложение работает. Ожидание сигнала завершения (Ctrl+C или команда /stop)...
+2025-05-12 01:23:37,605 - INFO - config - ATH_PROCESSOR: Запуск обработчика результатов ATH...
+2025-05-12 01:23:37,605 - INFO - config - BUYSELL_PROCESSOR: Запуск обработчика результатов Buy/Sell...
+2025-05-12 01:23:37,606 - DEBUG - apscheduler.scheduler - Looking for jobs to run
+2025-05-12 01:23:37,606 - DEBUG - apscheduler.scheduler - Next wakeup is due at 2025-05-12 01:24:01+05:00 (in 23.393913 seconds)
+2025-05-12 01:23:37,634 - INFO - config - MAIN: PTB: app.updater.start_polling() запущен и работает в фоне.
+2025-05-12 01:23:54,215 - INFO - telegram_handler - TG_HANDLER (UMH): NewMessage от ID='-1002318939340', username='SolanaXpertWallet', is_bot='False'. Текст: '[$GORTH](https://solscan.io/token/CZtV9zVW2qkLWjUVKbfXYkPrGgLaiND4bRVXB3JYpump) (PumpFun) Scanning (...'
+2025-05-12 01:23:57,301 - INFO - telegram_handler - TG_HANDLER (Edited): MessageEdited от ID='-1002318939340', username='SolanaXpertWallet'. Текст: '[$GORTH](https://solscan.io/token/CZtV9zVW2qkLWjUVKbfXYkPrGgLaiND4bRVXB3JYpump) (PumpFun) Scanning (...'
+2025-05-12 01:24:00,987 - DEBUG - apscheduler.scheduler - Looking for jobs to run
+2025-05-12 01:24:00,988 - DEBUG - apscheduler.scheduler - Next wakeup is due at 2025-05-12 01:24:01+05:00 (in 0.011726 seconds)
+2025-05-12 01:24:01,018 - DEBUG - apscheduler.scheduler - Looking for jobs to run
+2025-05-12 01:24:01,019 - DEBUG - apscheduler.scheduler - Next wakeup is due at 2025-05-12 01:25:01+05:00 (in 59.980073 seconds)
+2025-05-12 01:24:01,022 - INFO - apscheduler.executors.default - Running job "run_parsing_cycle (trigger: cron[second='1'], next run at: 2025-05-12 01:25:01 +05)" (scheduled at 2025-05-12 01:24:01+05:00)
+2025-05-12 01:24:01,022 - INFO - config - RUN_CYCLE (01:24:01): Очистка pending_ath_checks и ath_results_queue перед новым циклом парсинга.
+2025-05-12 01:24:01,022 - INFO - config - RUN_CYCLE (01:24:01): ========== Запуск цикла парсинга Axiom ==========
+2025-05-12 01:24:01,023 - INFO - browser_parser - BROWSER_PARSER: Начало парсинга страницы Discover...
+2025-05-12 01:24:01,065 - INFO - browser_parser - BROWSER_PARSER: Найдено 12 строк с монетами для парсинга.
+2025-05-12 01:24:04,622 - INFO - browser_parser - BROWSER_PARSER: Парсинг завершен. Найдено строк: 12. Успешно спарсено монет: 12.
+2025-05-12 01:24:04,952 - INFO - config - RUN_CYCLE: Успешно спарсено 12 монет. Фильтрация и отправка на проверку ATH...
+2025-05-12 01:24:04,953 - INFO - config - RUN_CYCLE: Отправка CA S7SU7WLoTFgvRH1wQDB7BzaVo1kVGBjy8D4groX2pGV (Moongoat) на проверку ATH (Режим: BOTH)...
+2025-05-12 01:24:05,749 - INFO - telegram_handler - TG_HANDLER (UMH): NewMessage от ID='7941368212', username='DevsNightmareProbot', is_bot='True'. Текст: '**Moongoat** || __Moongoat__ __PumpSwap__ [__Creator__](https://solscan.io/account/null) 💰 FDV: $0.0...'
+2025-05-12 01:24:05,749 - INFO - telegram_handler - TG_HANDLER (UMH): Сообщение от @DevsNightmareProbot. Вызов _handle_ath_response.
+2025-05-12 01:24:05,751 - INFO - telegram_handler - ATH_HANDLER (DevsNightmareProbot): Ответ связан с ожидаемым CA 'S7SU7WLoTFgvRH1wQDB7BzaVo1kVGBjy8D4groX2pGV'.
+2025-05-12 01:24:05,754 - INFO - telegram_handler - ATH_HANDLER (DevsNightmareProbot): ATH для CA 'S7SU7WLoTFgvRH1wQDB7BzaVo1kVGBjy8D4groX2pGV' = 'N/A'.
+2025-05-12 01:24:05,755 - ERROR - telethon.client.updates - Unhandled exception on universal_message_handler
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.0\venv\Lib\site-packages\telethon\client\updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.1-gem\telegram_handler.py", line 293, in universal_message_handler
+    await self._handle_ath_response(message_obj.text, sender_username_raw)
+  File "C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.1-gem\telegram_handler.py", line 505, in _handle_ath_response
+    await self.evaluate_ath_decision(target_ca, from_monitor=False)
+  File "C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.1-gem\telegram_handler.py", line 535, in evaluate_ath_decision
+    if config.ATH_BOT_MODE_RUNTIME == "BOTH" and \
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'ATH_BOT_MODE_RUNTIME'
+2025-05-12 01:24:07,453 - INFO - config - RUN_CYCLE: Отправка CA EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump (m0m) на проверку ATH (Режим: BOTH)...
+2025-05-12 01:24:08,352 - INFO - telegram_handler - TG_HANDLER (UMH): NewMessage от ID='7941368212', username='DevsNightmareProbot', is_bot='True'. Текст: '**m0m** || __m0m__ __PumpFun >> PumpSwap__ [__Creator__](https://solscan.io/account/7FR8XvfckfzoWwUg...'
+2025-05-12 01:24:08,352 - INFO - telegram_handler - TG_HANDLER (UMH): Сообщение от @DevsNightmareProbot. Вызов _handle_ath_response.
+2025-05-12 01:24:08,353 - INFO - telegram_handler - ATH_HANDLER (DevsNightmareProbot): Ответ связан с ожидаемым CA 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump'.
+2025-05-12 01:24:08,354 - INFO - telegram_handler - ATH_HANDLER (DevsNightmareProbot): ATH для CA 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump' = 240s.
+2025-05-12 01:24:08,354 - INFO - telegram_handler - EVALUATE_ATH (EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump): Первый хороший ответ от ATH1 (240s). Отправка в очередь.
+2025-05-12 01:24:08,354 - INFO - config - ATH_PROCESSOR: Получен результат из очереди: {'ca': 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump', 'ath_seconds': 240, 'source_bot': '@DevsNightmareProbot'}
+2025-05-12 01:24:08,354 - INFO - config - ATH_PROCESSOR: Успешно получен ATH (240s) для CA 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump' (m0m) от @DevsNightmareProbot. Проверка фильтров...
+2025-05-12 01:24:08,355 - INFO - config - ATH_PROCESSOR: CA 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump' (m0m) НЕ ПРОШЕЛ фильтр ATH (240s > 60s).
+2025-05-12 01:24:08,355 - INFO - config - ATH_PROCESSOR: CA 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump' (m0m) удален из ожидания (не прошел фильтр ATH).
+2025-05-12 01:24:08,355 - ERROR - config - ATH_PROCESSOR: Непредвиденная ошибка в цикле: task_done() called too many times
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.1-gem\main.py", line 472, in process_ath_results
+    telegram_handler.ath_results_queue.task_done()
+  File "C:\Program Files\Python312\Lib\asyncio\queues.py", line 201, in task_done
+    raise ValueError('task_done() called too many times')
+ValueError: task_done() called too many times
+2025-05-12 01:24:08,367 - WARNING - config - ATH_PROCESSOR: Ошибка при task_done в блоке исключения (возможно, элемент уже был отмечен).
+2025-05-12 01:24:08,921 - ERROR - apscheduler.executors.default - Job "run_parsing_cycle (trigger: cron[second='1'], next run at: 2025-05-12 01:25:01 +05)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.0\venv\Lib\site-packages\apscheduler\executors\base.py", line 181, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.1-gem\main.py", line 366, in run_parsing_cycle
+    pending_ath_checks[ca]['ath2_status'] = 'pending' # Обновляем статус
+    ~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump'
+2025-05-12 01:24:09,687 - INFO - telegram_handler - TG_HANDLER (UMH): NewMessage от ID='6126376117', username='RickBurpBot', is_bot='True'. Текст: '[🚀](https://dexscreener.com/solana/3xxewyueqfdckzou6ytssrua8jk8f1gwqwemryex2dkn) [**Moongoat**](http...'
+2025-05-12 01:24:09,688 - INFO - telegram_handler - TG_HANDLER (UMH): Сообщение от @RickBurpBot. Вызов _handle_ath_response.
+2025-05-12 01:24:09,689 - INFO - telegram_handler - ATH_HANDLER (RickBurpBot): Ответ связан с ожидаемым CA 'S7SU7WLoTFgvRH1wQDB7BzaVo1kVGBjy8D4groX2pGV'.
+2025-05-12 01:24:09,689 - INFO - telegram_handler - ATH_HANDLER (RickBurpBot): ATH для CA 'S7SU7WLoTFgvRH1wQDB7BzaVo1kVGBjy8D4groX2pGV' = 0s.
+2025-05-12 01:24:09,689 - ERROR - telethon.client.updates - Unhandled exception on universal_message_handler
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.0\venv\Lib\site-packages\telethon\client\updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.1-gem\telegram_handler.py", line 296, in universal_message_handler
+    await self._handle_ath_response(message_obj.text, sender_username_raw)
+  File "C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.1-gem\telegram_handler.py", line 505, in _handle_ath_response
+    await self.evaluate_ath_decision(target_ca, from_monitor=False)
+  File "C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.1-gem\telegram_handler.py", line 535, in evaluate_ath_decision
+    if config.ATH_BOT_MODE_RUNTIME == "BOTH" and \
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'ATH_BOT_MODE_RUNTIME'
+2025-05-12 01:24:13,074 - INFO - telegram_handler - TG_HANDLER (UMH): NewMessage от ID='6126376117', username='RickBurpBot', is_bot='True'. Текст: '[💊](https://pump.fun/EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump) [**m0m**](https://t.me/RickBurpBo...'
+2025-05-12 01:24:13,075 - INFO - telegram_handler - TG_HANDLER (UMH): Сообщение от @RickBurpBot. Вызов _handle_ath_response.
+2025-05-12 01:24:13,076 - WARNING - telegram_handler - ATH_HANDLER (RickBurpBot): Извлеченные CA (['EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump', 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump', 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump']) не найдены в активных pending_ath_checks (['S7SU7WLoTFgvRH1wQDB7BzaVo1kVGBjy8D4groX2pGV']). Ответ игнорируется.
+2025-05-12 01:24:42,730 - CRITICAL - telegram_handler - PTB_DEBUG_ALL_MSG: Получено сообщение от user_id=5554544104: '/pause'
+2025-05-12 01:24:42,731 - INFO - telegram_handler - PTB: Вход в _handle_pause_command. Сообщение от user_id=5554544104, username='racetta2'. Текст: '/pause'
+2025-05-12 01:24:43,035 - INFO - telegram_handler - PTB: Вызов _pause_callback для команды /pause от 5554544104.
+2025-05-12 01:24:43,036 - INFO - config - MAIN (CMD PAUSE): Активация режима паузы...
+2025-05-12 01:24:43,156 - INFO - apscheduler.scheduler - Paused scheduler job processing
+2025-05-12 01:24:43,156 - INFO - config - MAIN (CMD PAUSE): Планировщик APScheduler поставлен на паузу.
+2025-05-12 01:24:43,159 - INFO - config - MAIN (CMD PAUSE): Очистка очереди ATH результатов...
+2025-05-12 01:24:43,160 - INFO - config - MAIN (CMD PAUSE): Очередь Buy/Sell результатов НЕ очищается при постановке на паузу.
+2025-05-12 01:24:43,161 - INFO - config - MAIN (CMD PAUSE): Бот успешно поставлен на паузу.
+2025-05-12 01:24:43,421 - INFO - config - ATH_PROCESSOR: Бот на паузе (pause_event установлен). Ожидание команды /play для снятия паузы...
+2025-05-12 01:24:43,825 - INFO - config - BUYSELL_PROCESSOR: Бот на паузе (pause_event установлен). Ожидание команды /play для снятия паузы...
+2025-05-12 01:24:58,462 - CRITICAL - telegram_handler - PTB_DEBUG_ALL_MSG: Получено сообщение от user_id=5554544104: '/play'
+2025-05-12 01:24:58,463 - INFO - telegram_handler - PTB: Вход в _handle_play_command. Сообщение от user_id=5554544104, username='racetta2'. Текст: '/play'
+2025-05-12 01:24:58,765 - INFO - telegram_handler - PTB: Вызов _play_callback для команды /play от 5554544104.
+2025-05-12 01:24:58,766 - INFO - config - MAIN: Возобновление работы бота по команде /play...
+2025-05-12 01:24:58,879 - INFO - apscheduler.scheduler - Resumed scheduler job processing
+2025-05-12 01:24:58,880 - INFO - config - MAIN: Планировщик APScheduler возобновлен.
+2025-05-12 01:24:58,882 - INFO - config - MAIN: Бот возобновил работу.
+2025-05-12 01:24:58,884 - DEBUG - apscheduler.scheduler - Looking for jobs to run
+2025-05-12 01:24:58,885 - DEBUG - apscheduler.scheduler - Next wakeup is due at 2025-05-12 01:25:01+05:00 (in 2.114693 seconds)
+2025-05-12 01:24:58,953 - INFO - config - BUYSELL_PROCESSOR: Пауза снята (pause_event очищен). Возобновление обработки очереди Buy/Sell.
+2025-05-12 01:24:58,996 - INFO - config - ATH_PROCESSOR: Пауза снята (pause_event очищен). Возобновление обработки очереди ATH.
+2025-05-12 01:25:00,986 - DEBUG - apscheduler.scheduler - Looking for jobs to run
+2025-05-12 01:25:00,987 - DEBUG - apscheduler.scheduler - Next wakeup is due at 2025-05-12 01:25:01+05:00 (in 0.012386 seconds)
+2025-05-12 01:25:01,016 - DEBUG - apscheduler.scheduler - Looking for jobs to run
+2025-05-12 01:25:01,019 - DEBUG - apscheduler.scheduler - Next wakeup is due at 2025-05-12 01:26:01+05:00 (in 59.980709 seconds)
+2025-05-12 01:25:01,022 - INFO - apscheduler.executors.default - Running job "run_parsing_cycle (trigger: cron[second='1'], next run at: 2025-05-12 01:26:01 +05)" (scheduled at 2025-05-12 01:25:01+05:00)
+2025-05-12 01:25:01,024 - INFO - config - RUN_CYCLE (01:25:01): Очистка pending_ath_checks и ath_results_queue перед новым циклом парсинга.
+2025-05-12 01:25:01,026 - INFO - config - RUN_CYCLE (01:25:01): ========== Запуск цикла парсинга Axiom ==========
+2025-05-12 01:25:01,028 - INFO - browser_parser - BROWSER_PARSER: Начало парсинга страницы Discover...
+2025-05-12 01:25:01,058 - INFO - browser_parser - BROWSER_PARSER: Найдено 12 строк с монетами для парсинга.
+2025-05-12 01:25:04,103 - INFO - browser_parser - BROWSER_PARSER: Парсинг завершен. Найдено строк: 12. Успешно спарсено монет: 12.
+2025-05-12 01:25:04,420 - INFO - config - RUN_CYCLE: Успешно спарсено 12 монет. Фильтрация и отправка на проверку ATH...
+2025-05-12 01:25:04,421 - INFO - config - RUN_CYCLE: Отправка CA S7SU7WLoTFgvRH1wQDB7BzaVo1kVGBjy8D4groX2pGV (Moongoat) на проверку ATH (Режим: BOTH)...
+2025-05-12 01:25:05,105 - INFO - telegram_handler - TG_HANDLER (UMH): NewMessage от ID='7941368212', username='DevsNightmareProbot', is_bot='True'. Текст: '**Moongoat** || __Moongoat__ __PumpSwap__ [__Creator__](https://solscan.io/account/null) 💰 FDV: $0.0...'
+2025-05-12 01:25:05,107 - INFO - telegram_handler - TG_HANDLER (UMH): Сообщение от @DevsNightmareProbot. Вызов _handle_ath_response.
+2025-05-12 01:25:05,108 - INFO - telegram_handler - ATH_HANDLER (DevsNightmareProbot): Ответ связан с ожидаемым CA 'S7SU7WLoTFgvRH1wQDB7BzaVo1kVGBjy8D4groX2pGV'.
+2025-05-12 01:25:05,108 - INFO - telegram_handler - ATH_HANDLER (DevsNightmareProbot): ATH для CA 'S7SU7WLoTFgvRH1wQDB7BzaVo1kVGBjy8D4groX2pGV' = 'N/A'.
+2025-05-12 01:25:05,108 - ERROR - telethon.client.updates - Unhandled exception on universal_message_handler
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.0\venv\Lib\site-packages\telethon\client\updates.py", line 570, in _dispatch_update
+    await callback(event)
+  File "C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.1-gem\telegram_handler.py", line 293, in universal_message_handler
+    await self._handle_ath_response(message_obj.text, sender_username_raw)
+  File "C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.1-gem\telegram_handler.py", line 505, in _handle_ath_response
+    await self.evaluate_ath_decision(target_ca, from_monitor=False)
+  File "C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.1-gem\telegram_handler.py", line 535, in evaluate_ath_decision
+    if config.ATH_BOT_MODE_RUNTIME == "BOTH" and \
+       ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'config' has no attribute 'ATH_BOT_MODE_RUNTIME'
+2025-05-12 01:25:06,892 - INFO - config - RUN_CYCLE: Отправка CA EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump (m0m) на проверку ATH (Режим: BOTH)...
+2025-05-12 01:25:07,525 - INFO - telegram_handler - TG_HANDLER (UMH): NewMessage от ID='7941368212', username='DevsNightmareProbot', is_bot='True'. Текст: '**m0m** || __m0m__ __PumpFun >> PumpSwap__ [__Creator__](https://solscan.io/account/7FR8XvfckfzoWwUg...'
+2025-05-12 01:25:07,526 - INFO - telegram_handler - TG_HANDLER (UMH): Сообщение от @DevsNightmareProbot. Вызов _handle_ath_response.
+2025-05-12 01:25:07,527 - INFO - telegram_handler - ATH_HANDLER (DevsNightmareProbot): Ответ связан с ожидаемым CA 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump'.
+2025-05-12 01:25:07,527 - INFO - telegram_handler - ATH_HANDLER (DevsNightmareProbot): ATH для CA 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump' = 33s.
+2025-05-12 01:25:07,527 - INFO - telegram_handler - EVALUATE_ATH (EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump): Первый хороший ответ от ATH1 (33s). Отправка в очередь.
+2025-05-12 01:25:07,527 - INFO - config - ATH_PROCESSOR: Получен результат из очереди: {'ca': 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump', 'ath_seconds': 33, 'source_bot': '@DevsNightmareProbot'}
+2025-05-12 01:25:07,527 - INFO - config - ATH_PROCESSOR: Успешно получен ATH (33s) для CA 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump' (m0m) от @DevsNightmareProbot. Проверка фильтров...
+2025-05-12 01:25:07,528 - INFO - config - ATH_PROCESSOR: CA 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump' (m0m) ПРОШЕЛ фильтр по возрасту ATH.
+2025-05-12 01:25:07,530 - INFO - config - ATH_PROCESSOR: CA 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump' (m0m). Текущий статус в БД: 'None'.
+2025-05-12 01:25:07,530 - INFO - config - ATH_PROCESSOR: CA 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump' (m0m) ПРОШЕЛ фильтр статуса БД.
+2025-05-12 01:25:07,531 - INFO - config - ATH_PROCESSOR: CA 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump' (m0m) ПРОШЛА ВСЕ ФИЛЬТРЫ. Отправка на покупку...
+2025-05-12 01:25:07,531 - INFO - config - ATH_PROCESSOR: CA 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump' (m0m). Объем V=$36,900. Выбран бот: @paris_trojanbot.
+2025-05-12 01:25:07,642 - INFO - config - ATH_PROCESSOR: CA 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump' (m0m) успешно отправлен боту @paris_trojanbot.
+2025-05-12 01:25:07,909 - INFO - config - ATH_PROCESSOR: Данные для CA 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump' (m0m) записаны в БД со статусом 'Processing'.
+2025-05-12 01:25:07,909 - ERROR - config - ATH_PROCESSOR: Непредвиденная ошибка в цикле: task_done() called too many times
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.1-gem\main.py", line 552, in process_ath_results
+    telegram_handler.ath_results_queue.task_done()
+  File "C:\Program Files\Python312\Lib\asyncio\queues.py", line 201, in task_done
+    raise ValueError('task_done() called too many times')
+ValueError: task_done() called too many times
+2025-05-12 01:25:07,911 - WARNING - config - ATH_PROCESSOR: Ошибка при task_done в блоке исключения (возможно, элемент уже был отмечен).
+2025-05-12 01:25:08,223 - ERROR - apscheduler.executors.default - Job "run_parsing_cycle (trigger: cron[second='1'], next run at: 2025-05-12 01:26:01 +05)" raised an exception
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.0\venv\Lib\site-packages\apscheduler\executors\base.py", line 181, in run_coroutine_job
+    retval = await job.func(*job.args, **job.kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.1-gem\main.py", line 366, in run_parsing_cycle
+    pending_ath_checks[ca]['ath2_status'] = 'pending' # Обновляем статус
+    ~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump'
+2025-05-12 01:25:08,547 - INFO - telegram_handler - TG_HANDLER (UMH): NewMessage от ID='6996346418', username='paris_trojanbot', is_bot='True'. Текст: '**Buy** $**M0M** — (m0m) [📈](https://dexscreener.com/solana/EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAz...'
+2025-05-12 01:25:08,548 - INFO - telegram_handler - TG_HANDLER (UMH): Сообщение от @paris_trojanbot. Вызов _handle_buy_sell_response.
+2025-05-12 01:25:08,549 - CRITICAL - telegram_handler - BUYSELL_HANDLER (paris_trojanbot): Ошибка 'Insufficient balance'!
+2025-05-12 01:25:08,549 - INFO - config - BUYSELL_PROCESSOR: Получен результат: {'ca': 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump', 'type': None, 'per': None, 'error_type': 'balance', 'source_bot': 'paris_trojanbot'}
+2025-05-12 01:25:08,549 - CRITICAL - config - BUYSELL_PROCESSOR: Ошибка баланса от paris_trojanbot (CA: EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump). Инициирую АВТО-ПАУЗУ.
+2025-05-12 01:25:08,549 - INFO - config - MAIN (AUTO-PAUSE): Активация режима паузы (Причина: Insufficient balance от paris_trojanbot для CA: EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump
+<b>None</b>
+)...
+2025-05-12 01:25:08,668 - INFO - apscheduler.scheduler - Paused scheduler job processing
+2025-05-12 01:25:08,668 - INFO - config - MAIN (AUTO-PAUSE): Планировщик APScheduler поставлен на паузу.
+2025-05-12 01:25:08,671 - INFO - config - MAIN (AUTO-PAUSE): Очистка очереди ATH результатов...
+2025-05-12 01:25:08,671 - INFO - config - MAIN (AUTO-PAUSE): Очередь Buy/Sell результатов НЕ очищается при постановке на паузу.
+2025-05-12 01:25:08,672 - INFO - config - MAIN (AUTO-PAUSE): Бот успешно поставлен на паузу (Причина: Insufficient balance от paris_trojanbot для CA: EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump
+<b>None</b>
+).
+2025-05-12 01:25:08,804 - INFO - config - BUYSELL_PROCESSOR: Бот на паузе (pause_event установлен). Ожидание команды /play для снятия паузы...
+2025-05-12 01:25:08,806 - INFO - telegram_handler - TG_HANDLER (UMH): NewMessage от ID='6126376117', username='RickBurpBot', is_bot='True'. Текст: '[🟡](https://dexscreener.com/solana/3xxewyueqfdckzou6ytssrua8jk8f1gwqwemryex2dkn) [**Moongoat**](http...'
+2025-05-12 01:25:08,807 - INFO - telegram_handler - TG_HANDLER (UMH): Сообщение от @RickBurpBot. Вызов _handle_ath_response.
+2025-05-12 01:25:08,807 - INFO - telegram_handler - ATH_HANDLER (RickBurpBot): Бот на паузе. Ответ для CA (примерно) 'S7SU7WLoTFgvRH1wQDB7BzaVo1kVGBjy8D4groX2pGV' не будет обработан.
+2025-05-12 01:25:08,923 - INFO - config - ATH_PROCESSOR: Бот на паузе (pause_event установлен). Ожидание команды /play для снятия паузы...
+2025-05-12 01:25:09,424 - INFO - telegram_handler - TG_HANDLER (UMH): NewMessage от ID='6126376117', username='RickBurpBot', is_bot='True'. Текст: '[🚀](https://dexscreener.com/solana/hp7rhsw2msjzyrpky5xohhxnshmtmclgny8ywa96ojif)[💊](https://pump.fun...'
+2025-05-12 01:25:09,425 - INFO - telegram_handler - TG_HANDLER (UMH): Сообщение от @RickBurpBot. Вызов _handle_ath_response.
+2025-05-12 01:25:09,427 - INFO - telegram_handler - ATH_HANDLER (RickBurpBot): Бот на паузе. Ответ для CA (примерно) 'EmffXFjatUdSL6TszGrYcStLYV64hw1rb1GwcbAzpump' не будет обработан.
+2025-05-12 01:25:44,010 - CRITICAL - telegram_handler - PTB_DEBUG_ALL_MSG: Получено сообщение от user_id=5554544104: '/stop'
+2025-05-12 01:25:44,011 - CRITICAL - telegram_handler - PTB: !!! КОМАНДА СТОП от админа 5554544104 (racetta2) !!!
+2025-05-12 01:25:44,313 - INFO - telegram_handler - PTB: Вызов _stop_callback...
+2025-05-12 01:25:44,314 - INFO - config - MAIN: Получен сигнал trigger_shutdown.
+2025-05-12 01:25:44,316 - INFO - config - MAIN: Попытка отправить уведомление "🛑 Бот Axiom Volume останавливается..." из trigger_shutdown.
+2025-05-12 01:25:44,431 - INFO - config - MAIN: Уведомление об остановке (из trigger_shutdown) отправлено или попытка сделана.
+2025-05-12 01:25:44,431 - INFO - config - MAIN: Установка события ЗАВЕРШЕНИЯ РАБОТЫ (shutdown_event)...
+2025-05-12 01:25:44,433 - INFO - config - MAIN: Очистка события паузы (pause_event)...
+2025-05-12 01:25:44,434 - INFO - config - MAIN: Начало процедуры корректного завершения работы...
+2025-05-12 01:25:44,435 - INFO - config - MAIN: Планировщик остановлен.
+2025-05-12 01:25:44,436 - INFO - config - MAIN: Отмена задач обработки очередей...
+2025-05-12 01:25:44,437 - INFO - apscheduler.scheduler - Scheduler has been shut down
+2025-05-12 01:25:44,439 - INFO - config - MAIN: Задачи обработки очередей завершены или были отменены.
+2025-05-12 01:25:44,440 - INFO - config - MAIN: PTB polling task все еще активен после сигнала shutdown, ожидаем его завершения или отменяем.
+2025-05-12 01:25:44,705 - INFO - config - MAIN: PTB: Цикл ожидания polling завершен (updater.running: True, shutdown_event: True).
+2025-05-12 01:25:44,706 - INFO - config - MAIN: PTB polling task wrapper (run_ptb_polling_wrapper) входит в блок finally.
+2025-05-12 01:25:44,710 - INFO - config - MAIN: PTB (finally): updater все еще работает, попытка остановить.
+2025-05-12 01:25:44,807 - INFO - config - MAIN: PTB (finally): Application все еще работает, попытка остановить.
+2025-05-12 01:25:44,807 - INFO - telegram.ext.Application - Application is stopping. This might take a moment.
+2025-05-12 01:25:44,809 - INFO - telegram.ext.Application - Application.stop() complete
+2025-05-12 01:25:44,810 - INFO - config - MAIN: Нет активных задач для ожидания/отмены.
+2025-05-12 01:25:44,810 - INFO - config - ==================== ЗАВЕРШЕНИЕ РАБОТЫ AXIOM VOLUME BOT ====================
+2025-05-12 01:25:44,811 - INFO - telegram_handler - TG_HANDLER: Отключение Telegram клиентов...
+2025-05-12 01:25:44,811 - INFO - telegram_handler - TG_HANDLER: Вызов PTB Application.shutdown()...
+2025-05-12 01:25:44,812 - INFO - telegram_handler - TG_HANDLER: PTB Application.shutdown() завершен.
+2025-05-12 01:25:44,817 - INFO - telegram_handler - TG_HANDLER: Telethon отключен.
+2025-05-12 01:25:44,817 - INFO - telegram_handler - TG_HANDLER: Telegram клиенты (PTB и Telethon) полностью отключены.
+2025-05-12 01:25:44,818 - INFO - config - MAIN: Небольшая пауза перед закрытием браузера...
+2025-05-12 01:25:47,819 - INFO - browser_parser - BROWSER_PARSER: Начало процедуры закрытия браузера...
+2025-05-12 01:25:47,841 - INFO - browser_parser - BROWSER_PARSER: Страница успешно закрыта.
+2025-05-12 01:25:48,007 - INFO - browser_parser - BROWSER_PARSER: Контекст браузера успешно закрыт.
+2025-05-12 01:25:48,017 - INFO - browser_parser - BROWSER_PARSER: Playwright успешно остановлен.
+2025-05-12 01:25:48,017 - INFO - browser_parser - BROWSER_PARSER: Процедура закрытия браузера завершена.
+2025-05-12 01:25:48,017 - INFO - config - ==================== ЗАВЕРШЕНИЕ РАБОТЫ AXIOM VOLUME BOT ====================
+2025-05-12 01:25:48,020 - INFO - config - MAIN_RUN: Блок finally выполнен. Программа завершает работу.
+2025-05-12 01:25:48,042 - ERROR - asyncio - Task exception was never retrieved
+future: <Task finished name='ATH_Timeout_Monitor' coro=<ath_timeout_monitor_task() done, defined at C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.1-gem\main.py:673> exception=NameError("name 'datetime' is not defined")>
+Traceback (most recent call last):
+  File "C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.1-gem\main.py", line 696, in ath_timeout_monitor_task
+    await telegram_handler.evaluate_ath_decision(ca, from_monitor=True)
+  File "C:\Users\user\Desktop\Axiom Volume Bot\Gem\v1.1-gem\telegram_handler.py", line 545, in evaluate_ath_decision
+    now = datetime.now()
+          ^^^^^^^^
+NameError: name 'datetime' is not defined. Did you forget to import 'datetime'
